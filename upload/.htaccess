@@ -1,0 +1,38 @@
+AddDefaultCharset UTF-8
+DefaultLanguage ru-RU
+
+Options -Indexes
+DirectoryIndex index.php index.html index.htm
+
+# Log file deny
+
+<Files DBG_LOG.txt>
+Deny from all
+</Files>
+
+# Error page without mod_rewrite
+
+ErrorDocument 404 /index.php?c=not-found
+
+# php_flag register_globals off
+
+<IfModule mod_rewrite.c>
+
+    Options +FollowSymlinks
+
+    SetEnv HTTP_MOD_REWRITE On
+    RewriteEngine On
+    
+    # Exclude directories from rewrite rules
+    
+    RewriteRule ^(data) - [L]
+
+    # For Friendly URLs
+    
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?c=$1 [L,QSA]
+    
+    # 404 c is ./not-found
+    
+</IfModule>

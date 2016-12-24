@@ -1,0 +1,267 @@
+body {
+    background-color : #e4e4e4;
+}
+
+input[type=text] {
+	width : 240px; 
+	margin-right : 12px; 
+	height : 32px; 
+	background-color : #fdfdfd; 
+	border : 1px solid #6a6a6a;
+}
+
+.job-container-hidden {
+    display : none;
+}
+
+.session-cookies {
+
+word-break: break-all; 
+white-space: normal;
+display : none;
+}
+
+.content-main {
+
+}
+
+
+.container-searchbycolor {
+    margin : 0 auto;
+    padding : 0;
+}
+
+.container-searchbycolor .content {
+    margin : 0 auto;
+    padding : 0;
+}
+
+.container-searchbycolor img {
+    vertical-align: bottom;
+}
+
+.search-button {
+    min-width : 200px;
+    line-height: 30px;
+    text-align: center;
+    background: #55aaff;
+    transition: background 0.2s;
+    border: 1px solid rgba(0,0,0,0.1);
+    color: #fff;
+    display: inline-block;
+}
+
+.search-button:hover, .search-button:focus {
+    background: #2574c2;
+	text-decoration : none;
+	color : #fff;
+}
+
+/* Search by color page */
+
+#search-results {
+    margin-top : 12px;
+    text-align : center;
+    font-size : 0;
+    
+    transition: opacity 1s ease-out;
+    opacity: 0; 
+	height: 0px;
+    overflow: hidden;
+    
+    width : 100%;
+}
+
+#search-results p {
+    margin: 0px;
+}
+
+#search-results-scaled {
+    text-align : center;
+    width : 100%;
+}
+
+#search-color-show-button {
+	text-align : center;
+	
+    transition: opacity 1s ease-out;
+    opacity: 0; 
+	height: 0;
+    overflow: hidden;
+	
+	padding-top : 12px;
+}
+
+#search-color-form-container {
+    text-align : center;
+	
+	transition: opacity 1s ease-out;
+    opacity: 0; 
+	height: 0;
+    overflow: hidden;
+}
+
+.block-active{
+	height: auto !important;
+	opacity: 1 !important; 
+}
+
+.search-image-block {
+    display : inline-block; 
+    position : relative;
+}
+
+.search-image-block:hover .search-controll {
+    display : inline-block; 
+}
+
+.search-controll {
+    display : none; 
+    width : 100%; 
+    padding : 12px; 
+    text-align : left ; 
+    background : #80bfff; 
+    color : #2a002a;
+    position : absolute; 
+    left : 0;
+    top: 0;
+    font-size : 14px;
+}
+.search-controll a, .search-controll a:hover, .search-controll a:focus {
+    color : #2a002a;
+    text-decoration : none;
+    
+}
+
+#search-color-form-container  input[type=text] {
+    width : 340px;
+    height : 32px;
+    margin-top : 12px;
+    margin-bottom : 12px;
+}
+
+.saturation div {
+	display : inline-block;
+	line-height : 36px;
+}
+			
+#saturation {
+	font-size : 16px;
+}
+
+.saturation-controll {
+	display : inline-block;
+	margin-left : 12px;
+}
+
+.saturation-controll a {
+	display: inline-block;
+	text-decoration : none; 
+	color : #555; 
+	padding-bottom : 0px; 
+	font-weight : bold; 
+	font-size : 24px; 
+	width : 32px;
+	height : 32px;
+}
+
+.search-color {
+	width : 120px;
+	height : 120px;
+	text-decoration : none;
+	color : transparent;
+	background-color : transparent;
+	cursor : default;
+	border : 1px solid transparent;
+    border-radius : 6px;
+    
+	font-size : 16px;
+	font-weight : bold;
+	text-align : center;
+	margin-top : 12px;
+}
+
+.search-color:focus, .search-color:focus{
+	outline: none;
+}
+
+/* button pattern
+
+#search-color-form-container input[type=submit] {
+    border : 0px;
+    background-color : #f49535;
+    width : 120px;
+    height : 34px;
+    margin-top : 12px;
+}
+*/
+
+#search-color-form-container .search-button {
+    min-width : 120px;
+	margin-top : 12px;
+	margin-right : 12px;
+}
+
+.search-from-file {
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05); 
+    border-radius: 2px;  
+    height: 30px;
+    display: inline-block;
+    overflow: visible;
+    cursor: pointer;
+	width: 200px;
+}
+
+.search-from-file input {
+    display: none;   
+}
+
+.search-from-file:hover .search-button {
+    background: #2574c2;
+}
+
+.search-from-file .input { /* maybe use in future */
+    width: 300px;
+    display: none;
+}
+
+.search-by-file-results {
+	text-align : center;
+}
+
+.search-by-file-row {
+	display : inline-block;
+	text-align : left;
+	
+	margin-top : 12px; 
+	border : 1px solid rgba(0,0,0, 0.2); 
+	padding : 12px; 
+	background-color : rgba(255, 255, 255, 0.4);
+	max-width : 500px;
+}
+
+.search-by-file-row-img {
+	text-align : center;
+}
+
+.search-by-file-tags {
+
+	word-break : break-all;
+}
+
+.search-by-file-results p {
+    margin: 0 0 2px;
+}
+
+#search-by-color-share {
+	padding-top : 12px;
+}
+
+#search-by-url, #search-by-color-share {
+
+	transition: opacity 1s ease-out;
+    opacity: 0; 
+	height: 0;
+    overflow: hidden;
+}
+
